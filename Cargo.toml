@@ -10,6 +10,9 @@ readme = "README.md"
 description = "Smart contract for AZERO coin wrapped as a PSP22 token"
 exclude = [ ".github/*" ]
 
+[profile.release]
+overflow-checks = false
+
 [dependencies]
 ink = { version = "=4.3.0", default-features = false }
 

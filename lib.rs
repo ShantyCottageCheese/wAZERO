@@ -6,7 +6,7 @@ mod traits;
 pub use psp22::{PSP22Error, PSP22};
 
 pub use traits::{WrappedAZERO, MAINNET, TESTNET};
-
+pub use self::wazero::WazeroRef;
 #[ink::contract]
 mod wazero {
     use crate::WrappedAZERO;
